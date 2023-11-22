@@ -1,0 +1,5 @@
+import pandas as pd
+dataset=pd.read_csv("Iris.csv")
+mydata=['SepalLengthCm','SepalWidthCm','PetalLengthCm','PetalWidthCm','Species']
+data2=dataset[mydata]
+print(data2.iloc[0:10])
