@@ -1,0 +1,21 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+data=pd.read_csv('Iris.csv')
+#print(data)
+a=data['SepalLengthCm']
+b=data['SepalWidthCm']
+c=data['PetalLengthCm']
+d=data['PetalWidthCm']
+plt.subplot(221)
+plt.hist(a)
+plt.title("Sepal Length")
+plt.subplot(222)
+plt.hist(b)
+plt.title("Sepal Width")
+plt.subplot(223)
+plt.hist(c)
+plt.title("Petal Length")
+plt.subplot(224)
+plt.hist(d)
+plt.title("Petal Width")
+plt.show()
