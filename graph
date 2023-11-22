@@ -1,0 +1,35 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+from matplotlib import style
+data=pd.read_csv("Iris.csv")
+style.use("ggplot")
+x=data['Id']
+y=data['SepalLengthCm']
+
+plt.plot(x,y)
+plt.xlabel("Id's")
+plt.ylabel("Sepal Length")
+plt.title("Id vs Sepal Length")
+plt.show()
+
+import pandas as pd
+import matplotlib.pyplot as plt
+from matplotlib import style
+data=pd.read_csv("Iris.csv")
+style.use("dark_background")
+plt.title("Id vs Sepal Length")
+
+
+import matplotlib.pyplot as plt
+from matplotlib import style
+data=pd.read_csv("Iris.csv")
+style.use("dark_background")
+
+a=data['SepalLengthCm']
+b=data['SepalWidthCm']
+c=data['PetalLengthCm']
+d=data['PetalWidthCm']
+plt.scatter(a,b,c='r',label="Sepal Length vs Sepal Width",s=20)
+plt.scatter(b,c,c='b',label="Petal Length vs Petal Width",s=20)
+plt.legend()
+plt.show()
